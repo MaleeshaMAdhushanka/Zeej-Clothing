@@ -30,6 +30,37 @@
             max-width: 3000px;
             margin: 3em auto;
         }
+
+        .newsletter {
+            background-color: #444;
+            color: white;
+            text-align: center;
+            padding: 2em 0;
+        }
+
+        .newsletter input[type="email"] {
+            padding: 0.5em;
+            margin-right: 1em;
+            border: none;
+            border-radius: 4px;
+        }
+
+        .newsletter input[type="submit"] {
+            padding: 0.5em 2em;
+            border: none;
+            border-radius: 4px;
+            background-color: #333;
+            color: white;
+            cursor: pointer;
+        }
+
+        .testimonials {
+            background-color: #fff;
+            padding: 2em;
+            max-width: 1200px;
+            margin: 2em auto;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
     </style>
 </head>
 
@@ -43,7 +74,7 @@
     <nav>
         <ul>
             <h3>
-                <li><a href="#">NEW ARRIVALS</a></li>
+                <li><a href="new_arrivals.html">NEW ARRIVALS</a></li>
                 <li><a href="#">DRESSES</a></li>
                 <li><a href="#">TOPS</a></li>
                 <li><a href="#">SKIRTS</a></li>
@@ -63,7 +94,7 @@
     <section>
 
         <center>
-            <h2><b><i>Latest Trends in Fashion</i></b></h2>
+            <h1><b><i>Latest Trends in Fashion</i></b></h1>
         </center>
     </section>
 
@@ -122,19 +153,34 @@
         </div>
     </section>
 
-    <h2>Customer Tesimonials</h2>
-    <blockquote>
-        <ul>
-            <p>"Great quality and fast delivery.Highly recommend"<li>Customer 1</li>
-            </p>
+    <section class="testimonials">
+        <h2>Customer Tesimonials</h2>
 
-            <p>"Amazing style and great prices.Love this shop!"<li>Customer 2</li>
-            </p>
+        <blockquote>
+            <ul>
+                <p>"Great quality and fast delivery.Highly recommend"<li>Customer 1</li>
+                </p>
 
-            <p>"Fansatic customer service and awesome products!<li>Customer 3</li>
-            </p>
-        </ul>
-    </blockquote>
+                <p>"Amazing style and great prices.Love this shop!"<li>Customer 2</li>
+                </p>
+
+                <p>"Fansatic customer service and awesome products!<li>Customer 3</li>
+                </p>
+            </ul>
+        </blockquote>
+    </section>
+
+
+
+    <section class="newsletter">
+        <h2>Subscribe to Our Newsletter</h2>
+        <form>
+            <input type="email" placeholder="Enter your email">
+            <input type="submit" value="Subscribe">
+
+        </form>
+
+    </section>
 
     <footer>
         <center>
