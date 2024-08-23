@@ -9,41 +9,79 @@
     <title>New Arrivals - Clothing Shop</title>
 
     <style>
+        .navbar-list {
+            display: flex;
+            font-size: 15px;
+            justify-content: space-around;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
         .newsletter {
             background-color: #444;
             color: white;
             text-align: center;
             padding: 2em 0;
         }
+        .product {
+            background-color: white;
+            border-radius: 25px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin: 2em;
+            padding: 1em;
+            width: calc(35% - 2em);
+            box-sizing: border-box;
+            text-align: center;
+
+        }
+
+
+        .product-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 3em;
+            max-width: 3000px;
+            margin: 3em auto;
+        }
+
+
+
+
     </style>
 </head>
 
 <body>
     <header>
-        <center>
-            <h1>NEW ARRIVALS</h1>
-        </center>
+        
+            <h1 style="text-align: center;">NEW ARRIVALS</h1>
+
+
+            <nav>
+                <ul class="navbar-list">
+                         <li><a href="index.html">Home</a></li>
+                        <li><a href="new_arrivals.html">NEW ARRIVALS</a></li>
+                        <li><a href="dresses.html">DRESSES</a></li>
+                        <li><a href="tops.html">TOPS</a></li>
+                        <li><a href="skirts.html">SKIRTS</a></li>
+                        <li><a href="shorts.html">SHORTS</a></li>
+                        <li><a href="denim.html">DENIM</a></li>
+                        <li><a href="work_wear.html">WORK WEAR COLLECTION</a></li>
+                        <li><a href="Clothing-media.html">MEDIA CONTENT</a></li>
+                    
+        
+        
+        
+                </ul>
+            </nav>
+        
+        
 
     </header>
 
-    <nav>
-        <ul>
-            <h3>
-                <li><a href="new_arrivals.html">NEW ARRIVALS</a></li>
-                <li><a href="dresses.html">DRESSES</a></li>
-                <li><a href="tops.html">TOPS</a></li>
-                <li><a href="skirts.html">SKIRTS</a></li>
-                <li><a href="shorts.html">SHORTS</a></li>
-                <li><a href="denim.html">DENIM</a></li>
-                <li><a href="work_wear.html">WORK WEAR COLLECTION</a></li>
-                <li><a href="Clothing-media.html">MEDIA CONTENT</a></li>
-            </h3>
+    <main>
 
-
-
-        </ul>
-    </nav>
-
+    
     <section>
         <blockquote>
             <h2>Explore the Lates Fashion Trends</h2>
@@ -58,28 +96,35 @@
                     <div class="product">
                         <img src="/images/EA1.avif" style="width: 300px;height: 500px; object-fit: cover;"
                             alt="Product 1 clothing Boy">
-                        <h3><b>REGULAR FIT RAYON SHIRT</b></h3>
-                        <p>Rs 5,250.00 LKR</p>
-                        <button>Add to cart</button>
+                        <p><b>The Regular Fit Rayon Shirt</b> is a wardrobe staple that offers a perfect blend of style and comfort. 
+                            Crafted from lightweight and breathable rayon fabric, this shirt is ideal for both casual and semi-formal occasions. 
+                            Its relaxed fit provides ample room for movement, making it a comfortable choice for everyday wear. Rayon's natural fibers are known for their softness and drape, ensuring a luxurious feel against the skin. The regular fit silhouette flatters various body types, 
+                            making it a versatile option for men of all ages. Whether you're pairing it with jeans for a casual look or chinos for a more polished ensemble, the Regular Fit Rayon Shirt is a timeless piece that will elevate your wardrobe.</p>
                     </div>
                     </br>
-                    <div class="Product">
+                    <div class="product">
                         <img src="/images/Ea2.avif" style="width: 300px; height: 500px;object-fit: cover;"
                             alt="Product 2 clothing girl">
 
-                        <h3><b>FRONT TWISTED FRINGE DETAIL</b></h3>
-                        <p>Rs 8,250.00 LKR</p>
-                        <button>Add to cart</button>
+                         <p> <b>The front twisted fringe</b> detail is a captivating design element that adds a touch of texture and visual interest to any garment.
+                             This unique feature involves twisting or knotting fabric at the front, 
+                             creating a cascade of fringes that can be either subtle or dramatic.
+                              Whether it's incorporated into a dress, skirt, or top, 
+                              the front twisted fringe detail can instantly elevate the overall style and sophistication of an outfit. It's a popular choice for those seeking a modern and edgy aesthetic,
+                               as it can add a playful and unexpected element to a classic piece.</p>
 
                     </div>
                     </br>
                     <div class="product">
-                        <img src="/images/EA3.avif" style="width: 300px;height: 400px;object-fit: cover;"
+                        <img src="/images/EA3.avif" style="width: 500px;height: 600px;object-fit: cover;"
                             alt="product 3 Clothing girl">
-                        <h3><b>COREST DETAILED BACK TIE UP MAXI DRESS</b></h3>
-                        <p>Rs 7, 250.00 LKR</p>
-                        <button>Add to cart</button>
-
+                        <p><b>A corset detailed back tie-up maxi dress</b> is a stunning and elegant garment that combines the allure of a corset with the flowy grace of a maxi dress.
+                             The corset detailing, typically featuring intricate lace-up or ribbon closures,
+                              adds a touch of sensuality and sophistication to the overall design. 
+                              The back tie-up element offers a customizable fit, allowing you to adjust the dress to your desired level of comfort and style. 
+                              The maxi skirt, which can be either flowing or fitted, provides a striking contrast to the structured corset bodice.
+                               This dress is perfect for special occasions, such as weddings, galas, or evening events, 
+                               and can be styled with heels or flats to suit your personal preference.</p>
                     </div>
 
 
@@ -98,10 +143,11 @@
             <img src="/images/6214737_logo_youtube_icon (1).png" alt="youtube logo">
         </form>
     </section>
-    <footer>
-        <center>
+</main>
+    <footer style="text-align: center;">
+        
             <p>&copy; 2024 Clothing Shop. All Rights Reserved.</p>
-        </center>
+        
     </footer>
 </body>
 

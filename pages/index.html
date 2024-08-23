@@ -9,6 +9,16 @@
     <title>Clothing Shop-Home</title>
 
     <style>
+
+        .navbar-list {
+            display: flex;
+            font-size: 15px;
+            justify-content: space-around;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
         .product {
             background-color: white;
             border-radius: 25px;
@@ -66,29 +76,34 @@
 
 <body>
     <header>
-        <h1>
-            <center>WelCome to Our Clothing shop</center>
+        <h1 style="text-align: center;">
+            WelCome to Our Clothing shop
         </h1>
+       
+
+
+        <nav>
+            <ul class="navbar-list">
+                <!-- naviagtion /unorder list "list item" a is haper link connet to hyperlink  -->
+                
+                    <li><a href="new_arrivals.html">NEW ARRIVALS</a></li>
+                    <li><a href="dresses.html">DRESSES</a></li>
+                    <li><a href="tops.html">TOPS</a></li>
+                    <li><a href="skirts.html">SKIRTS</a></li>
+                    <li><a href="shorts.html">SHORTS</a></li>
+                    <li><a href="denim.html">DENIM</a></li>
+                    <li><a href="work_wear.html">WORK WEAR COLLECTION</a></li>
+                    <li><a href="Clothing-media.html">MEDIA CONTENT</a></li>
+    
+            </ul>
+        </nav>
     </header>
-    <!-- naviagtion /unorder list "list item" a is haper link connet to hyperlink  -->
-    <nav>
-        <ul>
-            <h3>
-                <li><a href="new_arrivals.html">NEW ARRIVALS</a></li>
-                <li><a href="dresses.html">DRESSES</a></li>
-                <li><a href="tops.html">TOPS</a></li>
-                <li><a href="skirts.html">SKIRTS</a></li>
-                <li><a href="shorts.html">SHORTS</a></li>
-                <li><a href="denim.html">DENIM</a></li>
-                <li><a href="work_wear.html">WORK WEAR COLLECTION</a></li>
-            </h3>
 
+    <main>
+    
+   
 
-
-        </ul>
-    </nav>
-
-    <center><img src="/images/event2.jpg" style="width: 1800px; height: 600px; object-fit: cover;"
+    <center><img src="/images/event2.jpg" style="width: 1500px; height: 600px; object-fit: contain;"
             alt="welcomeClothing photo"></center>
 
     <section>
@@ -184,14 +199,13 @@
         </form>
 
     </section>
+</main>
 
-    <footer>
-        <center>
+    <footer style="text-align: center;">
+    
             <p> &copy; 2024 Clothing Shop. All Right Reserved</p>
-        </center>
+        
     </footer>
-
-
 
 
 
