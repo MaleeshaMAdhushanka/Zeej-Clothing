@@ -9,6 +9,17 @@
     <title>New Arrivals - Clothing Shop</title>
 
     <style>
+
+        #headerStyle{
+          text-align: center;
+          font-style: oblique;
+          line-height: 50px;
+          letter-spacing: 0.cap;
+
+
+          
+
+        }
         .navbar-list {
             display: flex;
             font-size: 15px;
@@ -45,6 +56,13 @@
             margin: 3em auto;
         }
 
+          /* child selectors */
+        #cart #product-bold +p{
+
+            font-weight: bold;
+        }
+         
+
 
 
 
@@ -52,7 +70,7 @@
 </head>
 
 <body>
-    <header>
+    <header id="headerStyle">
         
             <h1 style="text-align: center;">NEW ARRIVALS</h1>
 
@@ -93,20 +111,22 @@
 
             <blockquote>
                 <section class="product-grid">
-                    <div class="product">
+                    <div class="product" id="cart">
                         <img src="/images/EA1.avif" style="width: 300px;height: 500px; object-fit: cover;"
                             alt="Product 1 clothing Boy">
-                        <p><b>The Regular Fit Rayon Shirt</b> is a wardrobe staple that offers a perfect blend of style and comfort. 
+                        <p id="product-bold">
+                            <p>The Regular Fit Rayon Shirt</p> 
+                            is a wardrobe staple that offers a perfect blend of style and comfort. 
                             Crafted from lightweight and breathable rayon fabric, this shirt is ideal for both casual and semi-formal occasions. 
                             Its relaxed fit provides ample room for movement, making it a comfortable choice for everyday wear. Rayon's natural fibers are known for their softness and drape, ensuring a luxurious feel against the skin. The regular fit silhouette flatters various body types, 
                             making it a versatile option for men of all ages. Whether you're pairing it with jeans for a casual look or chinos for a more polished ensemble, the Regular Fit Rayon Shirt is a timeless piece that will elevate your wardrobe.</p>
                     </div>
                     </br>
-                    <div class="product">
+                    <div class="product" id="cart">
                         <img src="/images/Ea2.avif" style="width: 300px; height: 500px;object-fit: cover;"
                             alt="Product 2 clothing girl">
 
-                         <p> <b>The front twisted fringe</b> detail is a captivating design element that adds a touch of texture and visual interest to any garment.
+                         <p id="product-bold"> <p>The front twisted fringe</p> detail is a captivating design element that adds a touch of texture and visual interest to any garment.
                              This unique feature involves twisting or knotting fabric at the front, 
                              creating a cascade of fringes that can be either subtle or dramatic.
                               Whether it's incorporated into a dress, skirt, or top, 
@@ -115,10 +135,10 @@
 
                     </div>
                     </br>
-                    <div class="product">
-                        <img src="/images/EA3.avif" style="width: 500px;height: 600px;object-fit: cover;"
+                    <div class="product" id="cart">
+                        <img src="/images/EA3.avif" style="width: 400px;height: 600px;object-fit: cover;"
                             alt="product 3 Clothing girl">
-                        <p><b>A corset detailed back tie-up maxi dress</b> is a stunning and elegant garment that combines the allure of a corset with the flowy grace of a maxi dress.
+                        <p id="product-bold"><p>A corset detailed back tie-up maxi dress</p> is a stunning and elegant garment that combines the allure of a corset with the flowy grace of a maxi dress.
                              The corset detailing, typically featuring intricate lace-up or ribbon closures,
                               adds a touch of sensuality and sophistication to the overall design. 
                               The back tie-up element offers a customizable fit, allowing you to adjust the dress to your desired level of comfort and style. 
