@@ -1,0 +1,59 @@
+div p{
+    font-weight: bold;
+}
+
+#headerStyle{
+  text-align: center;
+  font-style: oblique;
+  line-height: 50px;
+  letter-spacing: 0.cap;
+}
+
+.color-span{
+    background-color: turquoise;
+}
+
+.h4{
+    font-weight: bold;
+
+}
+
+
+  
+
+.navbar-list {
+    display: flex;
+    font-size: 15px;
+    justify-content: space-around;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.newsletter {
+    background-color: #444;
+    color: white;
+    text-align: center;
+    padding: 2em 0;
+}
+
+.product {
+    background-color: white;
+    border-radius: 25px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 2em;
+    padding: 1em;
+    width: calc(95% - 4em);
+    box-sizing: border-box;
+    text-align: left;
+
+}
+
+
+.product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 3em;
+    max-width: 1000px;
+    margin: 3em auto;
+}
