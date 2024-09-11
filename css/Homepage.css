@@ -23,24 +23,30 @@
       background-color: white;
       border-radius: 25px;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-      margin: 4em;
+      margin: 1em;
       padding: 1em;
-      width: calc(40% - 2em);
+      width: 30%;
       box-sizing: border-box;
       text-align: center;
 
 
   }
+  .product >img {
+      width: 100%;
+      border-radius: 25px;
+  }
 
 
   .product-grid {
-      display: flex;
-      flex-wrap: wrap;
+       display: flex;
+      flex-wrap: wrap; 
       justify-content: space-around;
-      padding: 3em;
-      max-width: 3000px;
-      margin: 3em auto;
+      width: 100%;
+      padding: 10px;
+       
   }
+
+  
 
   .newsletter {
       background-color: #444;
@@ -79,3 +85,6 @@
   font-style: italic;
   font-weight: bold;
  }
+
+
+

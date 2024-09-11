@@ -47,3 +47,7 @@ button:hover{
     max-width: 3000px;
     margin: 3em auto;
 }
+#video1 {
+    width: 60%;
+    border-radius: 25px;
+}
