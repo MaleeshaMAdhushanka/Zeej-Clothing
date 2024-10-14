@@ -9,21 +9,32 @@
     <title>Clothing Shop-Home</title>
     <link rel="stylesheet" href="/css/Homepage.css">
 
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+
+
     
 </head>
 
 <body>
     <header id="headerStyle">
-        <h1>
-            WelCome to Our Clothing shop
-        </h1>
+
+        <h1>WelCome to Our Clothing shop </h1>
+        <i class="fa fa-bars burger" id="burger" aria-hidden="true"></i>
        
 
 
         <nav>
+          
             <ul class="navbar-list">
                 <!-- naviagtion /unorder list "list item" a is haper link connet to hyperlink  -->
                 
+
                     <li><a href="new_arrivals.html">NEW ARRIVALS</a></li>
                     <li><a href="dresses.html">DRESSES</a></li>
                     <li><a href="tops.html">TOPS</a></li>
@@ -32,27 +43,47 @@
                     <li><a href="denim.html">DENIM</a></li>
                     <li><a href="work_wear.html">WORK WEAR COLLECTION</a></li>
                     <li><a href="Clothing-media.html">MEDIA CONTENT</a></li>
-    
+
+                    
             </ul>
+           
+          
         </nav>
+        
     </header>
+
+    <div class="menu-panel"  id="menu-panel-id">
+        <button class="close-btn" id="btn-close">&times;</button>
+        <ul>
+            <li><a href="new_arrivals.html">NEW ARRIVALS</a></li>
+            <li><a href="dresses.html">DRESSES</a></li>
+            <li><a href="tops.html">TOPS</a></li>
+            <li><a href="skirts.html">SKIRTS</a></li>
+            <li><a href="shorts.html">SHORTS</a></li>
+            <li><a href="denim.html">DENIM</a></li>
+            <li><a href="work_wear.html">WORK WEAR COLLECTION</a></li>
+            <li><a href="Clothing-media.html">MEDIA CONTENT</a></li>
+
+        </ul>
+
+
+    </div>
 
     <main>
     
    
 
-    <center><img src="/images/event2.jpg" style="width: 100% ;object-fit: contain;"
-            alt="welcomeClothing photo"></center>
+    <img class="welcome-pic" src="/images/event2.jpg" style="width: 100% ;object-fit: contain;" alt="welcomeClothing photo">
 
-    <section>
+    
 
-        <center>
-            <h1><b><i>Latest Trends in Fashion</i></b></h1>
-        </center>
-    </section>
+     <h1 class="latest-h1">Latest Trends in Fashion</h1>
+        
+   
 
     <section class="product-grid">
-        <div class="product" id="card">
+        
+        <div class="product" id="card-1">
 
             <img src="/images/event4.webp" style="object-fit: cover;"
                 alt="newTrends girl clothe"> </br>
@@ -65,7 +96,7 @@
 
         </div>
 
-        <div class="product" id="card">
+        <div class="product" id="card-2">
             <img src="/images/event6.webp" style=" object-fit: cover;"
                 alt="2pic with newTrends girlCloth">
             <p id="pragrahpContent">Unveil the Newest Fashion Arrivals at Our Boutique</p>
@@ -78,7 +109,7 @@
         </div>
 
 
-        <div class="product" id="card">
+        <div class="product" id="card-3">
             <img src="/images/event8.webp" style="object-fit: cover;" alt="boy clothe">
 
             <p id="pragrahpContent">Our New Boys' Clothing Collection: Style Meets Comfort for Every Adventure</p>
@@ -109,7 +140,6 @@
     <section class="testimonials">
         <h2>Customer Tesimonials</h2>
 
-        <blockquote>
             <ul>
                 <p>"Great quality and fast delivery.Highly recommend"<li>Customer 1</li>
                 </p>
@@ -120,7 +150,7 @@
                 <p>"Fansatic customer service and awesome products!<li>Customer 3</li>
                 </p>
             </ul>
-        </blockquote>
+        
     </section>
 
 
@@ -144,6 +174,26 @@
             <p> &copy; 2024 Clothing Shop. All Right Reserved</p>
         
     </footer>
+
+
+    <script>
+       const burger = document.getElementById('burger');
+       const menuPanel = document.getElementById('menu-panel-id');
+       const closeBtn = document.getElementById("btn-close");
+
+       burger.addEventListener('click', () => {
+           menuPanel.classList.toggle('active');
+       });
+
+       closeBtn.addEventListener("click", () => {
+          menuPanel.classList.toggle("active");
+       });
+
+
+
+
+
+    </script>
 
 
 

@@ -1,90 +1,557 @@
-#headerStyle{
+body {
+    overflow-x: hidden;
+}
+
+/* 
+h1 {
+    text-align: center;
+    font-style: italic;
+    font-weight: 700;
+} */
+
+
+
+#headerStyle {
     text-align: center;
     font-style: oblique;
     line-height: 50px;
     letter-spacing: 0.cap;
- }
+}
+
+.welcome-pic {
+    width: 100%;
+    object-fit: contain;
+
+}
+
+
+
+
+
+
+
+
+.navbar-list {
+    display: flex;
+    font-size: 15px;
+    justify-content: space-around;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+}
+
+.navbar-list li a {
+    color: blue;
+    text-decoration: none;
+
+}
+
+
+
+/* using product  */
+
+.product {
+    background-color: white;
+    border-radius: 25px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 1em;
+
+    padding: 1em;
+    width: 30%;
+    box-sizing: border-box;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+
+    width: 70%;
+    cursor: pointer;
+
+
+
+}
+
+.product>img {
+
+    width: 100%;
+    border-radius: 25px;
+    margin-bottom: 10%;
+
+}
+
+
+/* #card-1 > img {
+    width: 100%;
+    border-radius: 25px;
+   margin-bottom: 500%;
+    
+   
+}
+#card-2 > img {
+    width: 100%;
+    border-radius: 25px;
+    margin-bottom: 500%;
+    
+   
+} */
+
+
+#card-3 {
+    width: 80%;
+}
+
+#card-3>img {
+    width: 90%;
+    border-radius: 25px;
+
+
+
+}
+
+
+
+
+.product-grid {
+    /* display: flex; */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 11px;
+    /* flex-wrap: wrap; 
+      justify-content: space-around;
+      width: 100%; */
+    padding: 10px;
+
+
+
+}
+
+
+
+.newsletter {
+    background-color: #444;
+    color: white;
+    text-align: center;
+    padding: 2em 0;
+}
+
+.newsletter input[type="email"] {
+    padding: 0.5em;
+    margin-right: 1em;
+    border: none;
+    border-radius: 4px;
+}
+
+.newsletter input[type="submit"] {
+    padding: 0.5em 2em;
+    border: none;
+    border-radius: 4px;
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+}
+
+/* Customer feed back */
+
+.testimonials {
+    background-color: #a6b593;
+    padding: 2em;
+    max-width: 1000px;
+    margin: 2em auto;
+    box-shadow: 5px 5px 5px #1bccc3;
+    border-radius: 5% 12%;
+}
+
+#pragrahpContent {
+    /* background-color: blue; */
+    font-style: italic;
+    font-weight: bold;
+}
+
+
+.product>p {
+    font-weight: 400;
+}
+
+
+.menu-panel {
+    background-color: black;
+    color: white;
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    transition: right 0.3s ease;
+}
+
+.menu-panel ul {
+    list-style: none;
+    padding: 50px 20px;
+}
+
+
+.menu-panel ul li {
+    margin-bottom: 20px;
+}
+
+.menu-panel ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.close-btn {
+    background-color: transparent;
+    color: white;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 30px;
+    display: none;
+}
+
+
+.burger {
+    /* this none showing this size hide burgur button */
+
+    display: none;
+    color: black;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+/*  Mobile Small (up to 320px) */
+@media screen and (max-width: 320px) {
+
+    body {
+        overflow-x: hidden;
+    }
+
+    .navbar-list {
+        display: none;
+    }
+
+    .burger {
+        display: block;
+        background-color: white;
+        font-size: 0.8rem;
+        cursor: pointer;
+        position: absolute;
+        top: 14px;
+        right: 15px;
+    }
+
+    #headerStyle h1 {
+        text-align: left;
+        font-style: italic;
+        font-weight: 600;
+        /* font-size: 0.4em; */
+        line-height: 20px;
+        font-size: 21px;
+        letter-spacing: 0cap;
+    }
+
+    .latest-h1{
+        text-align: left;
+        font-size: 18px;
+        padding-left: 40px;
+    
+
+    }
+
+
+    .product-grid {
+        grid-template-columns: repeat(1, 1fr);
+        margin-left: 5%;
+
+    }
+
+    #card-3 {
+        width: 70%;
+    }
+
+    .welcome-pic {
+        width: 40%;
+        height: 190%;
+        object-fit: cover;
+    
+    }
+
+    .testimonials {
+        background-color: #a6b593;
+        padding: 0.1em;
+        max-width: 200px;
+        margin: 1em  2em 2em 2em;
+        box-shadow: 5px 5px 5px #1bccc3;
+        border-radius: 5% 12%;
+    }
+
+    .testimonials ul > p {
+        font-size: 15px;
+        text-align: left;
+
+    }
+
+    .newsletter {
+        width: 100%;
+        background-color: #444;
+        font-size: 14px;
+        color: white;
+        text-align: center;
+        padding: 2em 0;
+        border-radius: 12px;
+    }
+    .newsletter input[type="email"] {
+        padding: 0.6em;
+        margin-right: 0.5em;
+        width: 125px;
+        border: none;
+        border-radius: 4px;
+    }
+
+    footer {
+        font-size: 15px;
+        width: 80%;
+    }
 
     
 
+    .menu-panel {
+        height: 100vh;
+        width: 100vw;
+    }
 
-  .navbar-list {
-      display: flex;
-      font-size: 15px;
-      justify-content: space-around;
-      list-style: none;
-      padding: 0;
-      margin: 0;
-  }
-
-  /* using product  */
-
-  .product {
-      background-color: white;
-      border-radius: 25px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-      margin: 1em;
-      padding: 1em;
-      width: 30%;
-      box-sizing: border-box;
-      text-align: center;
+    .menu-panel ul li a {
+        color: white;
+        text-decoration: none;
+        font-size: 0.8rem;
+    }
 
 
-  }
-  .product >img {
-      width: 100%;
-      border-radius: 25px;
-  }
+
+    .menu-panel.active {
+        right: 0;
+
+    }
+
+    .close-btn {
+        display: block;
+        color:  blue;
+    }
 
 
-  .product-grid {
-       display: flex;
-      flex-wrap: wrap; 
-      justify-content: space-around;
-      width: 100%;
-      padding: 10px;
-       
-  }
 
-  
+}
 
-  .newsletter {
-      background-color: #444;
-      color: white;
-      text-align: center;
-      padding: 2em 0;
-  }
+/* Mobile Medium (up to 375px) */
 
-  .newsletter input[type="email"] {
-      padding: 0.5em;
-      margin-right: 1em;
-      border: none;
-      border-radius: 4px;
-  }
 
-  .newsletter input[type="submit"] {
-      padding: 0.5em 2em;
-      border: none;
-      border-radius: 4px;
-      background-color: #333;
-      color: white;
-      cursor: pointer;
-  }
-  /* Customer feed back */
+@media screen and (min-width: 321px) and (max-width: 375px) {
 
-  .testimonials {
-      background-color: #a6b593;
-      padding: 2em;
-      max-width: 1000px;
-      margin: 2em auto;
-      box-shadow:  5px 5px 5px #1bccc3 ;
-      border-radius: 5% 12%;
-  }
- #card #pragrahpContent{
-  /* background-color: blue; */
-  font-style: italic;
-  font-weight: bold;
- }
+    .navbar-list {
+        display: none;
+    }
+
+    .burger {
+        display: block;
+        background-color: white;
+        font-size: 0.9rem;
+        position: absolute;
+       top: 8px;
+       right: 12px;
+    }
+
+    #headerStyle h1 {
+        text-align: center;
+        font-style: italic;
+        font-weight: 600;
+        /* font-size: 0.4em; */
+        line-height: 10px;
+        font-size: 16px;
+        letter-spacing: 0cap;
+    }
+
+
+    .product-grid {
+        
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .menu-panel {
+        height: 20%;
+        width: 10px;
+    }
+
+
+
+    .menu-panel.active {
+        right: 10;
+
+    }
+
+
+
+}
+
+
+
+/* Mobile Large (up to 425px) */
+
+@media screen and (min-width: 376px) and (max-width: 425px) {
+
+    .navbar-list {
+        display: none;
+    }
+
+    .burger {
+        display: block;
+        background-color: white;
+        font-size: 1rem;
+        position: absolute;
+        top: 8px;
+       right: 4px;
+    }
+
+    #headerStyle h1 {
+        text-align: center;
+        font-style: italic;
+        font-weight: 600;
+        /* font-size: 0.4em; */
+        line-height: 10px;
+        font-size: 23px;
+        letter-spacing: 0.1cap;
+    }
+
+    .menu-panel {
+        height: 20%;
+        width: 10px;
+    }
+
+
+
+    .menu-panel.active {
+        right: 10;
+
+    }
+
+
+
+}
+/* Tab type divices */
+/* done */
+@media screen and (min-width: 426px) and (max-width: 768px) {
+
+    .navbar-list {
+        display: none;
+    }
+
+    .burger {
+        display: block;
+        background-color: white;
+        font-size: 1rem;
+        position: absolute;
+       top: 11px;
+       right: 12px;
+    }
+
+    .product-grid {
+        
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+
+    #headerStyle h1 {
+        text-align: center;
+        font-style: italic;
+        font-weight: 600;
+        /* font-size: 0.4em; */
+        line-height: 11px;
+        font-size: 23px;
+        letter-spacing: 0.1cap;
+    }
+
+    .menu-panel {
+        height: 20%;
+        width: 10px;
+    }
+
+
+
+    .menu-panel.active {
+        right: 10;
+
+    }
+
+
+
+}
+/* 
+@media screen and (min-width: 769px) and (max-width: 1023px) {
+    .burger {
+        display: none;
+    }
+} */
+
+
+/* Laptop Type Devices */
+
+@media screen and (min-width: 769px)  and (max-width: 1024px) {
+
+    .burger {
+        display: none;
+    }
+
+    #headerStyle h1 {
+        text-align: center;
+        font-style: italic;
+        font-weight: 600;
+        /* font-size: 0.4em; */
+        line-height: 11px;
+        font-size: 23px;
+        letter-spacing: 0.1cap;
+    }
+
+    .product-grid {
+        
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+
+
+}
+
+
+/* Laptop Large */
+
+@media screen  and (min-width: 1025px) and (max-width: 1440px) {
+    .burger {
+        display: none;
+    }
+    #headerStyle h1 {
+        text-align: center;
+        font-style: italic;
+        font-weight: 700;
+        /* font-size: 0.4em; */
+        line-height: 15px;
+        font-size: 50px;
+        letter-spacing: 0.1cap;
+    }
+    .product-grid {
+        
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+
+
+
+}
+
+
+
+
 
 
 
