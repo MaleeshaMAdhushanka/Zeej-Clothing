@@ -1,3 +1,10 @@
+body {
+    overflow-x: hidden;
+}
+
+
+
+
 #headerStyle{
     text-align: center;
     font-style: oblique;
@@ -10,48 +17,148 @@
   }
   .navbar-list {
       display: flex;
-      font-size: 15px;
+      font-size: 20px;
       justify-content: space-around;
       list-style: none;
       padding: 0;
       margin: 0;
   }
-  .newsletter {
-      background-color: #444;
-      color: white;
-      text-align: center;
-      padding: 2em 0;
+
+  .navbar-list li a {
+    color: blue;
+    text-decoration: none;
   }
+
+
+
+
+  /* Using product */
   .product {
       background-color: white;
       border-radius: 25px;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-      margin: 2em;
+      margin: 1em;
       padding: 1em;
-      width: calc(35% - 2em);
+      width: 100%;
       box-sizing: border-box;
       text-align: center;
+      flex-direction: column;
+   
+      cursor: pointer;
 
+  }
+
+  #card-1 {
+    
   }
   .product > img{
       width: 100%;
       border-radius: 25px;
+      margin-bottom: 10%;
 
   }
 
 
   .product-grid {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-around;
-      padding: 3em;
-      max-width: 3000px;
-      margin: 3em auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 11px;
+    padding: 160px;
+
+
+      
   }
 
-    /* child selectors */
-  #cart #product-bold +p{
+
+  #pragrahpContent {
+    font-style: italic;
+    font-weight: bold;
+
+
+  }
+
+  .product > p {
+    font-weight: 400;
+  }
+
+    /* child selectors
+  #card #product-bold +p{
 
       font-weight: bold;
-  }
+  } */
+
+  .newsletter {
+    background-color: #444;
+    color: white;
+    text-align: center;
+    padding: 2em 0;
+}
+
+.newsletter input[type="email"]{
+  padding: 0.5em;
+  margin-right: 1em;
+  border: none;
+  border-radius: 4px;
+}
+
+.newsletter input[type = "submit"]{
+  padding: 0.5em 2em;
+  border: none;
+  border-radius: 4px;
+  background-color: #333;
+  color: white;
+  cursor: pointer;
+}
+
+
+.menu-panel {
+    background-color: black;
+    color: white;
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    transition:  right 0.3s ease;
+
+}
+
+.menu-panel ul {
+    list-style: none;
+    padding: 50px 20px;
+}
+
+.menu-panel ul li{
+    margin-bottom: 20px;
+}
+
+.menu-panel ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.close-btn {
+    background-color: transparent;
+    color: white;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 30px;
+    display: none;
+
+}
+
+#burger {
+    color: black;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+
+
+
+
    
