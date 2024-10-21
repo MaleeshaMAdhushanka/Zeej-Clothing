@@ -23,7 +23,7 @@
 <body>
     <header id="headerStyle">
         
-            <h1 style="text-align: center;">NEW ARRIVALS</h1>
+            <h1>NEW ARRIVALS</h1>
             <i class="fa fa-bars burger" id="burger" aria-hidden="true"></i>
 
 
@@ -75,11 +75,10 @@
     <main>
 
     
-    <section>
-        <blockquote>
-            <h2>Explore the Lates Fashion Trends</h2>
-        </blockquote>
-    </section>
+    
+            <h1 class="latest-h1">Explore the Lates Fashion Trends</h1>
+        
+
 
     <section>
 
@@ -89,6 +88,7 @@
                         <img src="/images/EA1.avif" style="object-fit: cover;"
                             alt="Product 1 clothing Boy">
                             <p id="pragrahpContent">The Regular Fit Rayon Shirt</p> 
+                            <p>
                             is a wardrobe staple that offers a perfect blend of style and comfort. 
                             Crafted from lightweight and breathable rayon fabric, this shirt is ideal for both casual and semi-formal occasions. 
                             Its relaxed fit provides ample room for movement, making it a comfortable choice for everyday wear. Rayon's natural fibers are known for their softness and drape, ensuring a luxurious feel against the skin. The regular fit silhouette flatters various body types, 
@@ -147,17 +147,17 @@
     </footer>
 
     <script>
-       const burger = document.getElementById('burger');
+        const burger = document.getElementById('burger');
        const menuPanel = document.getElementById('menu-panel-id');
-       const closeBtn = document.getElementById('btn-close');
+       const closeBtn = document.getElementById("btn-close");
 
-       burger.addEventListener('click', () =>{
+       burger.addEventListener('click', () => {
            menuPanel.classList.toggle('active');
-       })
+       });
 
-       closeBtn.addEventListener('cliclk', () => {
-            menuPanel.classList.toggle('active');
-       })
+       closeBtn.addEventListener("click", () => {
+          menuPanel.classList.toggle("active");
+       });
 
 
 

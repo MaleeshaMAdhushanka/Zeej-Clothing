@@ -63,7 +63,8 @@ body {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 11px;
-    padding: 160px;
+    /* margin-left: 5px; */
+    padding: 10px;
 
 
       
@@ -136,6 +137,7 @@ body {
     color: white;
     text-decoration: none;
     font-size: 1.2rem;
+    cursor: pointer;
 }
 
 .close-btn {
@@ -152,10 +154,550 @@ body {
 }
 
 #burger {
+  /* this noe showing this size hide burger button */
+    display: none;
     color: black;
     font-size: 2rem;
     cursor: pointer;
 }
+
+
+/* Mobile small (up to 320) */
+@media screen and (max-width: 320px) {
+  body{
+    overflow-x: hidden;
+  }
+  .navbar-list {
+    display: none;
+  }
+
+  #burger {
+    display: block;
+    font-size: 0.9rem;
+    cursor: pointer;
+    position: absolute;
+    top: 14px;
+    right: 15px;
+    
+  }
+  #headerStyle h1 {
+    font-style: italic;
+    text-align: left;
+    font-weight: 600;
+    line-height: 20px;
+    font-size: 21px;
+    letter-spacing: 0cap;
+
+  }
+
+  .latest-h1 {
+    text-align: left;
+    font-size: 18px;
+    margin-top: 20px;
+    padding-left: 30px;
+  }
+
+  .product-grid {
+    grid-template-columns: repeat(1, 1fr);
+    margin-left: 5px;
+  }
+
+  .product{
+    width: 85%;
+  }
+  .product > p{
+    font-size: xx-small;
+  }
+
+  .newsletter {
+    width: 100%;
+    background-color: #444;
+    font-size: 14px;
+    color: white;
+    text-align: center;
+    padding: 2em 0;
+    border-radius: 12px;
+  }
+  .newsletter input[type="email"] {
+    padding: 0.6em;
+    margin-right: 0.5em;
+    width: 150px;
+    border: none;
+    border-radius: 4px;
+  }
+  footer {
+   font-size: 15px;
+   width: 80%;
+  }
+
+  .menu-panel {
+    width: 100vw;
+    height: 100vh;
+
+  }
+
+  .menu-panel ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 0.8rem;
+  }
+
+  .menu-panel.active {
+    right: 0;
+  }
+
+  .close-btn {
+    display: block;
+    color: blue;
+  }
+
+
+
+
+
+}
+/* Mobile Medium (up to 375px) */
+
+@media screen and (min-width: 321px) and (max-width: 375px){
+   
+  .navbar-list {
+    display: none;
+  }
+
+  #burger {
+    display: block;
+    font-size: 1rem;
+    position: absolute;
+    top: 15px;
+    right: 12px;
+  }
+
+
+  #headerStyle h1 {
+    text-align: left;
+    font-style: italic;
+    line-height: 10px;
+    font-size: 23px;
+    letter-spacing: 0cap;
+    margin-top: 20px;
+  }
+
+  .latest-h1 {
+    text-align: left;
+    font-size: 20px;
+    margin-top: 25px;
+    padding-left: 40px;
+  }
+
+  .product-grid {
+    grid-template-columns: repeat(1, 1fr);
+    margin-left: 5px;
+
+  }
+
+  .product {
+    width: 90%;
+  }
+
+
+  .product > p{
+    font-size: small;
+  }
+
+  .newsletter {
+    font-size: 15px;
+    color: white;
+    text-align: center;
+    border-radius: 12px;
+    
+  }
+
+  .newsletter input[type="email"] {
+    margin-right: 0.8em;
+    width: 150px;
+  }
+
+  footer {
+    font-size: 17px;
+    width: 90%;
+
+
+  }
+
+  .menu-panel {
+    height: 100vh;
+    width: 100vw;
+  }
+  .menu-panel ul li a {
+    font-size: 1rem;
+}
+
+  .menu-panel.active {
+    right: 0;
+  }
+
+  .close-btn {
+    display: block;
+    color: blue;
+  }
+
+
+
+  
+}
+
+
+/* Mobile Larger(up to 425px) */
+
+@media screen and (min-width: 376px) and (max-width: 425px){
+  .navbar-list {
+    display: none;
+  }
+  #burger {
+    display: block;
+    font-size: 1.5rem;
+    position: absolute;
+    top: 9px;
+    right: 13px;
+
+  }
+
+  
+  #headerStyle h1 {
+    line-height: 10px;
+    font-size: 23px;
+    letter-spacing: 0.1cap;
+  }
+
+  .latest-h1 {
+       text-align: center;
+       font-size: 24px;
+       margin-top: 30px;
+       padding-left: 40px;
+
+  }
+  .product-grid {
+    grid-template-columns: repeat(1, 1fr);
+    margin-left: 1%;
+    margin-right: 6%;
+  }
+
+  .product {
+    width: 100%;
+  }
+
+  .product > p{
+    font-size: medium;
+  }
+
+  .newsletter {
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+  }
+    
+
+  .newsletter input[type="email"] {
+    margin-right: 0.8em;
+    width: 125px;
+  }
+
+  footer {
+    font-size: 20px;
+    width: 100%;
+  }
+
+  .menu-panel {
+    height: 100vh;
+    width: 100vw;
+  }
+
+  .menu-panel.active {
+    right: 0;
+  }
+  .close-btn {
+    display: block;
+    color: blue;
+  }
+
+  
+
+ }
+
+
+ /* Tab type divices */
+ @media screen and (min-width: 426px) and (max-width: 768px) {
+  .navbar-list {
+    display: none;
+  }
+
+  #burger {
+    display: block;
+    font-size: 1.2rem;
+    position: absolute;
+    top: 11px;
+    right: 12px;
+  }
+
+  #headerStyle h1 {
+       text-align: center;
+       font-style: italic;
+       font-weight: 600;
+       line-height: 11px;
+       font-size: 32px;
+       letter-spacing: 0.1cap;
+  }
+
+  .latest-h1 {
+    text-align: center;
+    font-size: 30px;
+    margin-top: 40px;
+    padding-left: 30px;
+  }
+
+  .product-grid {
+    grid-template-columns: repeat(1, 1fr);
+    margin-left: 14%;
+    
+  }
+
+  .product {
+    width: 80%;
+  } 
+
+  #pragrahpContent {
+    font-size: x-large;
+  }
+
+  .product > p {
+    font-size: large;
+  }
+
+  .newsletter {
+    font-size: 25px;
+    margin:  6px 1px 5px 15px;
+  }
+
+  .newsletter input[type = "email"]{
+    margin-right: 0.8em;
+    width: 230px;
+  }
+
+  footer {
+    font-size: 25px;
+    width: 90%;
+  }
+
+  .menu-panel {
+    height: 100vh;
+    width: 100vw;
+  }
+
+  .menu-panel.active {
+    right: 0;
+  }
+
+  .close-btn {
+    display: block;
+    color: blue;
+  }
+
+
+
+
+
+  
+ }
+
+ /* Laptop Type divices */
+
+ @media screen and (min-width: 769px) and (max-width: 1024px) {
+  
+
+  #hederStyle h1 {
+    font-weight: 700;
+    line-height: 7px;
+    font-size: 2rem;
+  }
+  .navbar-list {
+    font-size: 18px;
+  }
+
+
+  .latest-h1 {
+    text-align: center;
+    font-size: 36px;
+  }
+
+  .product-grid {
+    grid-template-columns: repeat(3, 1fr);
+    padding: 50px;
+  }
+
+  .product {
+    width: 100%;
+  }
+ 
+   /* .product-grid > #card-2 {
+    margin-right: 2em;
+    
+  }  */
+
+   #pragrahpContent{
+    font-size: large;
+   }
+
+   .product > p {
+     font-size: 20px;
+   }
+
+   .newsletter {
+    font-size: 28px;
+    width: 97%;
+    margin: 6px 1px 5px 15px;
+   }
+
+   .newsletter input[type="email"]{
+    margin-right: 5em;
+    width: 200px;
+   }
+   footer {
+    font-size: 27px;
+   }
+
+ }
+
+
+ /* Laptop Large */
+
+
+ @media screen and (min-width: 1025px) and (max-width: 1440px) {
+
+  #burger {
+    display: none;
+  }
+  
+
+  .navbar-list {
+    font-size: 20px;
+  }
+
+  .latest-h1 {
+    text-align: center;
+    font-size: 38px;
+  }
+
+  #headerStyle h1 {
+    font-weight:  700;
+    line-height: 65px;
+    font-size:  2rem;
+
+  }
+  .product-grid {
+    grid-template-columns: repeat(3, 1fr);
+    padding: 70px;
+  }
+
+  .product {
+    width: 100%;
+  }
+
+  #pragrahpContent{
+    font-size: x-large;
+   }
+
+   .product > p {
+    font-size: 22px;
+   }
+
+   .newsletter {
+    font-size: 30px;
+    width: 95%;
+    margin: 6px 1px 5px 15px;
+
+   }
+
+   .newsletter input[type="email"] {
+       margin-right: 1em;
+       width: 270px;
+   }
+
+   footer {
+    font-size: 28px;
+   }
+
+ 
+  
+ }
+
+ /* 4k -2560 */
+ @media screen and (min-width: 1441px) and (max-width: 2560px) {
+
+  #burger {
+    display: none;
+  }
+  
+
+  .navbar-list {
+    font-size: 23px;
+  }
+
+  .latest-h1 {
+    text-align: center;
+    font-size: 40px;
+  }
+
+  #headerStyle h1 {
+    font-weight:  700;
+    line-height: 70px;
+    font-size:  2.5rem;
+
+  }
+  .product-grid {
+    grid-template-columns: repeat(3, 1fr);
+    padding: 70px;
+  }
+
+  .product {
+    width: 100%;
+  }
+
+  #pragrahpContent{
+    font-size: x-large;
+   }
+
+   .product > p {
+    font-size: 22px;
+   }
+
+   .newsletter {
+    font-size: 30px;
+    width: 99%;
+    margin: 6px 1px 5px 15px;
+
+   }
+
+   .newsletter input[type="email"] {
+       margin-right: 1em;
+       width: 270px;
+   }
+
+   footer {
+    font-size: 30px;
+   }
+
+
+
+
+
+
+
+
+ }
+
+
+
 
 
 
