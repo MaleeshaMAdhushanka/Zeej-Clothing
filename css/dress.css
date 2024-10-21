@@ -1,4 +1,14 @@
-  /* using decendant selectors */
+body {
+  overflow-x: hidden;
+}
+
+
+
+
+
+
+
+/* using decendant selectors */
   div p{
     font-weight: bold;
   }
@@ -23,20 +33,18 @@
 
 .navbar-list {
     display: flex;
-    font-size: 15px;
+    font-size: 20px;
     justify-content: space-around;
     list-style: none;
     padding: 0;
     margin: 0;
 }
-
-
-.newsletter {
-    background-color: #444;
-    color: white;
-    text-align: center;
-    padding: 2em 0;
+.navbar-list li a {
+  color: blue;
+  text-decoration: none;
 }
+
+
 
 .product {
     background-color: white;
@@ -44,20 +52,26 @@
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     margin: 2em;
     padding: 1em;
-    width: calc(95% - 4em);
+    width: calc(60% - 4em);
     box-sizing: border-box;
     text-align: left;
+    
 
 }
 
 
 .product-grid {
-    display: flex;
+    /* display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     padding: 3em;
     max-width: 1000px;
-    margin: 3em auto;
+    margin: 3em auto; */
+    display: grid;
+    justify-items: center;
+    grid-template-rows: repeat(3, 1fr);
+    gap: 11px;
+    padding: 10px;
 }
 
 .product > p >img {
@@ -71,3 +85,57 @@
     font-weight: bold;
 
 }
+
+.newsletter {
+  background-color: #444;
+  color: white;
+  text-align: center;
+  padding: 2em 0;
+}
+
+.menu-panel {
+  background-color: black;
+  color: white;
+  height: 100%;
+  width: 250px;
+  position: fixed;
+  top: 0;
+  right: -100%;
+  transition: right 0.3s ease;
+
+}
+
+.menu-panel ul  {
+  list-style: none;
+  padding: 50px 20px;
+}
+
+.menu-panel ul li{
+  margin-bottom: 20px;
+}
+
+.menu-panel ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.close-btn {
+  background-color: transparent;
+  color: white;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  top: 10px;
+  right: 30px;
+  display: none;
+}
+
+#burger {
+  display: none;
+  color: black;
+  font-size: 2rem;
+  cursor: pointer;
+}
+

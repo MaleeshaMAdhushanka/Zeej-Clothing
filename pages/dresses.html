@@ -7,6 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DRESSES - Clothing shop</title>
     <link rel="stylesheet" href="/css/dress.css">
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"/>
 
 
 
@@ -19,6 +24,8 @@
     <header id="headerStyle">
     
         <h1>DRESSES</h1>
+        <i class="fa fa-bars burger" id="burger" aria-hidden="true"></i>
+
     
 
     <nav>
@@ -39,35 +46,51 @@
         </ul>
     </nav>
 </header>
+     
+   <div class="menu-panel" id="menu-panel-id"> 
+    <button class="close-btn" id="btn-close">&times;</button>
+
+     <ul>
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="new_arrivals.html">NEW ARRIVALS</a></li>
+        <li><a href="dresses.html">DRESSES</a></li>
+        <li><a href="tops.html">TOPS</a></li>
+        <li><a href="skirts.html">SKIRTS</a></li>
+        <li><a href="shorts.html">SHORTS</a></li>
+        <li><a href="denim.html">DENIM</a></li>
+        <li><a href="work_wear.html">WORK WEAR COLLECTION</a></li>
+        <li><a href="Clothing-media.html">MEDIA CONTENT</a></li>
+
+
+      </ul>
+
+
+   </div>
 
 
 <main>
 
-    <section>
-        <blockquote>
-            <h2>Elegant Dresses for Every Occasion</h2>
-        </blockquote>
-    </section>
-
+            <h1 class="latest-h1">Elegant Dresses for Every Occasion</h1>
+        
 
     <section class="product-grid">
 
         <div class="product">
             
             <p>
-
                 <img src="/images/dc1.avif" style="object-fit: cover;"
                     alt="product 1 dresses">
 
-            <h3>SIDE RUCHED SLID DETAILED HIGH NECH SATIN MIDI DRESS</h3>
-            </br>
-            <blockquote>
+             <h3>SIDE RUCHED SLID DETAILED HIGH NECH SATIN MIDI DRESS</h3>
+             </br>
+              <blockquote>
                 <h4>Size -</h4>
                 <p>UK6, UK8, UK14, UK16</p>
 
                 <h4>colour -Beige</h4>
                 
-                </p>
+            </p>
+
                 <p>Wash & Care-Wash dark colors separately, Hand wash only</p>
                 <p>Fabric Composition- 100% Polyester</p>
                 <p>About the model-
@@ -108,10 +131,10 @@
                 <p style="font-weight: normal;" ><span class="color-span">A floral detailed ruched satin midi dress</span> is a captivating and feminine garment that combines the elegance of satin with the romantic charm of floral embellishments. 
                     The floral details, whether they are intricate embroidery, delicate appliqués, or bold prints, add a touch of nature and whimsy to the overall design.
                      The ruching creates a flattering silhouette, accentuating curves and adding texture to the fabric. The midi length offers a versatile option for various occasions, from casual outings to formal events.
-                      This dress is perfect for those seeking a romantic and feminine look that is both stylish and comfortable.</p>
+                      This dress is perfect for those seeking a romantic and feminine look that is both stylish and comfortable.
 
 
-                <p></p>
+                </p>
 
             </blockquote>
 
@@ -162,10 +185,28 @@
 
 </main>
     <footer>
-        <center>
+       
             <p>&copy; 2024 Clothing Shop. All Rights Reserved.</p>
-        </center>
+       
     </footer>
+
+    <script>
+           const burger = document.getElementById('burger');
+       const menuPanel = document.getElementById('menu-panel-id');
+       const closeBtn = document.getElementById("btn-close");
+
+       burger.addEventListener('click', () => {
+           menuPanel.classList.toggle('active');
+       });
+
+       closeBtn.addEventListener("click", () => {
+          menuPanel.classList.toggle("active");
+       });
+
+
+
+
+    </script>
 
 
 
