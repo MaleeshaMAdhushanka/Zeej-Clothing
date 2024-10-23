@@ -31,7 +31,6 @@ body {
 
 
 
-
   /* Using product */
   .product {
       background-color: white;
@@ -95,7 +94,7 @@ body {
     padding: 2em 0;
 }
 
-.newsletter input[type="email"]{
+ .newsletter input[type="email"]{
   padding: 0.5em;
   margin-right: 1em;
   border: none;
@@ -356,6 +355,7 @@ body {
   #burger {
     display: block;
     font-size: 1.5rem;
+    cursor: pointer;
     position: absolute;
     top: 9px;
     right: 13px;
@@ -492,6 +492,7 @@ body {
   .menu-panel {
     height: 100vh;
     width: 100vw;
+    overflow-y: scroll;
   }
 
   .menu-panel.active {
@@ -672,7 +673,7 @@ body {
    }
 
    .newsletter {
-    font-size: 30px;
+    font-size: 20px;
     width: 99%;
     margin: 6px 1px 5px 15px;
 
@@ -684,7 +685,7 @@ body {
    }
 
    footer {
-    font-size: 30px;
+    font-size: 20px;
    }
 
 
