@@ -51,3 +51,47 @@ button:hover{
     width: 60%;
     border-radius: 25px;
 }
+
+
+
+/* Mobile small (up to 320) */
+
+@media screen and (max-width: 320px) {
+    
+}
+
+/* Mobile Medium(up to 425px) */
+
+@media screen and (min-width: 321px) and (max-width: 375px) {
+    
+}
+
+
+/* Mobile Largeer */
+
+@media screen and (min-width: 376px) and (max-width: 425px) {
+    
+}
+
+/* Tab Types divices */
+@media screen and (min-width: 426px) and (max-width: 768px) {
+    
+}
+
+
+/* Laptop Type divices */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    
+}
+
+/* Laptop large */
+
+@media screen and (max-width: 1025px) and (max-width: 1440px) {
+    
+}
+
+
+/* 4k -2560 */
+@media screen and (min-width : 1441px) and (max-width: 2560px){
+    
+}

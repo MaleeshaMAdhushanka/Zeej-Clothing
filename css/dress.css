@@ -180,7 +180,6 @@ body {
  .product-grid {
   grid-template-rows: repeat(1, 1fr);
   margin-left: 2px;
-  padding-left: 1px;
   padding-right: 2px;
  }
 
@@ -611,12 +610,13 @@ body {
     font-size: 15px;
 
   }
-  .latest-h1 {
+
+  .latest-h1{
     margin-top: 36px;
     text-align: center;
     font-size: 35px;
   }
-
+  
   .product-grid {
      
     grid-template-rows: repeat(1, 1fr);
