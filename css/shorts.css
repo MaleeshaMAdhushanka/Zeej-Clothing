@@ -1,3 +1,10 @@
+body {
+    overflow-x: hidden;
+}
+
+
+
+
 #headerStyle{
     text-align: center;
     font-style: oblique;
@@ -26,6 +33,11 @@ div p{
     margin: 0;
 }
 
+.navbar-list li a {
+    color: blue;
+    text-decoration: none;
+}
+
 
 .newsletter {
     background-color: #444;
@@ -48,12 +60,20 @@ div p{
 
 
 .product-grid {
-    display: flex;
+    /* display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     padding: 3em;
     max-width: 1000px;
-    margin: 3em auto;
+    margin: 3em auto; */
+
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-rows: repeat(3, 1fr);
+    gap: 11px;
+    padding: 10px;
+
 }
 
 .product > p >img {
@@ -61,17 +81,290 @@ div p{
     border-radius: 25px;
 }
 
+.newsletter {
+    background-color: #444;
+    color: white;
+    text-align: center;
+    padding: 2em 0;
+}
+
+ .menu-panel {
+    background-color: black;
+    color: white;
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    transition: right 0.3s ease;
+}
+
+.menu-panel ul {
+    list-style: none;
+    padding: 50px 20px;
+}
+
+.menu-panel ul li {
+    margin-bottom: 20px;
+}
+
+.menu-panel ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.close-btn {
+    background-color: transparent;
+    color: white;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    top: 10px;
+    right: 30px;
+    display: none;
+}
+
+#burger {
+    display: none;
+    color: black;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+
+ 
+
 
 
 /* Mobile small (up to 320) */
 
 @media screen and (max-width: 320px) {
+    body {
+        overflow-x: hidden;
+    }
+    .navbar-list {
+        display: none;
+    }
+    #burger {
+        display: block;
+        font-size: 0.9rem;
+        cursor: pointer;
+        position: absolute;
+        top: 14px;
+        right: 15px;
+    }
+
+    #headerStyle h1 {
+        font-style: italic;
+        text-align: left;
+        font-weight: 600;
+        line-height: 20px;
+        font-size: 15px;
+        letter-spacing: 0cap;
+    }
+
+    .latest-h1 {
+        text-align: left;
+        font-size: 17px;
+        margin-top: 25px;
+        padding-left: 30px;
+
+    }
+
+    .product-grid {
+        grid-template-rows: repeat(1, 1fr);
+        margin-left: 5px;
+        padding-right: 2px;
+    }
+
+    .product {
+        width: 80%;
+        margin-left: 5px;
+    }
+
+    .product > p >img {
+        width: 80%;
+    }
+
+    .product > h3 {
+        font-size: 15px;
+        text-align: left;
+        font-weight: bold;
+    }
+    .product > blockquote > h4 {
+        font-size: 13px;
+        text-align: left;
+        font-weight: 600;
+    }
+
+    .product > blockquote > p {
+        font-size: 12px;
+        text-align: left;
+        font-weight: 400;
+    }
+
+    .product > blockquote > #paragraph-left {
+        font-size: 12px;
+    }
+
+
+    .newsletter {
+        width: 100%;
+        font-size: 14px;
+        border-radius: 12px;
+    }
+
+    .newsletter input[type="email"]{
+        padding: 0.6em;
+        margin-right: 0.5em;
+        width: 150px;
+        border: none;
+        border-radius: 4px;
+    }
+
+    footer {
+        text-align: center;
+        font-size: 15px;
+        width: 80%;
+    }
+
+    .menu-panel {
+        width: 100vw;
+        height: 100vh;
+        overflow-y: scroll;
+     }
+
+     .menu-panel ul li a {
+        color: white;
+        text-decoration: none;
+        font-size: 0.8rem;
+     }
+
+     .menu-panel.active{
+        right: 0;
+     }
+
+     .close-btn {
+        display: block;
+        color: blue;
+    }
+      
+
+
+
+
+    
     
 }
 
 /* Mobile Medium(up to 425px) */
 
 @media screen and (min-width: 321px) and (max-width: 375px) {
+
+    .navbar-list {
+        display: none;
+    }
+    #burger {
+        display: block;
+        font-size: 1rem;
+        position: absolute;
+        top: 15px;
+        right: 12px;
+
+    }
+    #headerStyle h1 {
+        font-style: italic;
+        text-align: left;
+      
+        line-height: 0px;
+        font-size: 23px;
+        letter-spacing: 0cap;
+        margin-top: 20px;
+    }
+
+    .latest-h1 {
+        text-align: left;
+        font-size: 20px;
+        margin-top: 50px;
+        padding-left: 40px;
+
+    }
+
+    .product-grid {
+        grid-template-rows: repeat(1, 1fr);
+    }
+
+    .product {
+        width: 90%;
+    }
+
+    .product > p > img {
+        width: 80%;
+
+    }
+    .product > h3 {
+        font-size: 17px;
+        text-align: center;
+        font-weight: bold;
+
+    }
+
+    .product > blockquote > h4 {
+        font-size: 15px;
+        text-align: left;
+        font-weight: 600;
+    }
+
+    .product > blockquote > p {
+        font-size: 14px;
+        text-align: left;
+        font-weight: 400;
+
+    }
+
+    .product > blockquote > #paragraph-left{
+        font-size: 17px;
+    }
+
+
+    .newsletter {
+        font-size: 15px;
+        border-radius: 12px;
+    }
+
+    .newsletter input[type="email"]{
+        margin-right: 0.5em;
+        width: 150px;
+    }
+
+    footer {
+        text-align: center;
+        font-size: 18px;
+        width: 90%;
+    }
+
+
+    .menu-panel {
+        height: 100vh;
+        width: 100vw;
+        overflow-y: scroll;
+    }
+
+    .menu-panel ul li a {
+        font-size: 1rem;
+    }
+
+    .menu-panel.active {
+        right: 0;
+    }
+
+    .close-btn {
+        display: block;
+        color: blue;
+    }
+
     
 }
 
@@ -79,28 +372,452 @@ div p{
 /* Mobile Largeer */
 
 @media screen and (min-width: 376px) and (max-width: 425px) {
+
+
+    .navbar-list {
+        display: none;
+    }
+
+    #burger {
+        display: block;
+        font-size: 1.5rem;
+        cursor: pointer;
+        position: absolute;
+        top: 9px;
+        right: 13px;
+    }
+    #headerStyle h1 {
+        line-height: 10px;
+        font-size: 25px;
+        letter-spacing: 0.1cap;
+    
+    
+    }
+
+    
+    .latest-h1 {
+        text-align: center;
+        font-size: 24px;
+        margin-top: 35px;
+        padding-left: 40px;
+    
+    }
+
+    .product-grid {
+        grid-template-rows: repeat(1, 1fr);
+    }
+
+    .product {
+        width: 90%;
+    }
+
+    .product > p >img {
+        width: 85%;
+    }
+
+    .product > h3 {
+        font-size: 18px;
+        text-align: center;
+        font-weight: bold;
+    }
+
+    .product > blockquote > h4 {
+        font-size: 16px;
+        text-align: left;
+        font-weight: 600;
+    }
+      
+    .product > blockquote > p {
+      
+        font-size: 16px;
+        text-align: left;
+        font-weight: 400;
+    }
+
+    .product > blockquote > #paragraph-left {
+      
+        font-size: 15px;
+        
+    }
+
+    .newsletter {
+        font-size: 20px;
+        text-align: center;
+        border-radius: 5px;
+        
+    
+    }
+    
+    .newsletter input[type="email"]{
+        margin-right: 0.8em;
+        width: 125px;
+    
+    }
+    footer {
+        text-align: center;
+        font-size: 20px;
+        width: 100%;
+    
+       }
+    
+    .menu-panel {
+        width: 100vw;
+        height: 100vh;
+        overflow-y: scroll;
+    }
+      
+      
+      
+    .menu-panel.active{
+        right: 0;
+     }
+    
+    .close-btn {
+        display: block;
+        color: blue;
+     }
+
+
     
 }
 
 /* Tab Types divices */
 @media screen and (min-width: 426px) and (max-width: 768px) {
+
+     
+    .navbar-list {
+        display: none;
+    }
+
+    #burger {
+        display: block;
+        font-size: 1.2rem;
+        cursor: pointer;
+        position: absolute;
+        top: 11px;
+        right: 12px;
+
+    }
+    #headerStyle h1 {
+        
+        line-height: 11px;
+        font-size: 32px;
+        font-weight: 600;
+        letter-spacing: 0.1cap;
+    
+    }
+    .latest-h1 {
+        text-align: center;
+        font-size: 30px;
+        margin-top: 40px;
+        padding-left: 40px;
+    
+    }
+
+    .product-grid {
+        grid-template-rows: repeat(1, 1fr);
+    }
+
+    .product {
+        width: 85%;
+    }
+
+    .product > p >img {
+        width: 70%;
+    }
+
+    .product > h3 {
+        font-size: 19px;
+        text-align: center;
+        font-weight: bold;
+    }
+      
+    .product > blockquote > h4 {
+        font-size: 18px;
+        text-align: left;
+        font-weight: 600;
+    }
+      
+    .product > blockquote > p {
+      
+        font-size: 18px;
+        text-align: left;
+        font-weight: 400;
+    }
+      
+    .product > blockquote > #paragraph-left {
+      
+        font-size: 18px;
+        
+    }
+    .newsletter {
+        font-size: 20px;
+        
+        margin: 6px  1px 5px 15px;
+        
+    
+       }
+    
+    .newsletter input[type="email"]{
+        margin-right: 0.8em;
+        width: 230px;
+    
+       }
+    
+    footer {
+        text-align: center;
+        font-size: 18px;
+        width: 90%;
+    
+    }
+    .menu-panel {
+        width: 100vw;
+        height: 100vh;
+        overflow-y: scroll;
+    }
+      
+      
+      
+    .menu-panel.active{
+        right: 0;
+    }
+    
+    .close-btn {
+        display: block;
+        color: blue;
+    }
     
 }
 
 
 /* Laptop Type divices */
 @media screen and (min-width: 769px) and (max-width: 1024px) {
+
+    #headerStyle h1 {
+        font-size: 700;
+        line-height: 7px;
+        font-size: 40px;
+    }
+    .latest-h1{
+        margin-top: 36px;
+        text-align: center;
+        font-size: 35px;
+    }
+    .navbar-list {
+        margin-top: 40px;
+        font-size: 16px;
+    }
+
+    .product-grid {
+        grid-template-rows: repeat(1, 1fr);
+        padding: 50px;
+    }
+
+    .product {
+        width: 90%;
+    }
+    
+    .product > p > img {
+        width: 50%;
+    }
+
+    .product > h3 {
+        font-size: 25px;
+        text-align: center;
+        font-weight: bold;
+    }
+
+    .product > blockquote > h4 {
+        font-size: 23px;
+        text-align: left;
+        font-weight: 600;
+    }
+
+    .product > blockquote > p {
+        font-size: 22px;
+        text-align: left;
+        font-weight: 500;
+    }
+
+    .product > blockquote > #paragraph-left {
+        font-size: 20px;
+
+    }
+
+    .newsletter {
+        font-size: 15px;
+        width: 97%;
+        margin: 6px 1px 5px 15px;
+    }
+
+    .newsletter input[type="email"]{
+        margin-right: 5em;
+        width: 200px;
+    }
+
+    footer {
+        text-align: center;
+        font-size: 13px;
+    }
+
     
 }
 
 /* Laptop large */
 
-@media screen and (max-width: 1025px) and (max-width: 1440px) {
+@media screen and (min-width: 1025px) and (max-width: 1440px) {
+
+    #headerStyle h1 {
+        font-weight: 700;
+        line-height: 65px;
+        font-size: 2rem;
+    }
+
+    #burger {
+        display: none;
+    }
+
+    .navbar-list {
+        margin-top: 40px;
+        font-size: 25px;
+    }
+    .latest-h1 {
+        text-align: center;
+        margin-top: 45px;
+        font-size: 30px;
+    }
+    .product-grid {
+        grid-template-rows: repeat(1, 1fr);
+        margin-left: 100px;
+        padding: 70px;
+    }
+    .product {
+        width: 80%;
+    }
+    .product > p > img {
+        width: 55%;
+    }
+
+    .product > h3 {
+        font-size: 30px;
+        text-align: center;
+        font-weight: bold;
+      }
+      .product > blockquote > h4 {
+          font-size: 23px;
+          text-align: left;
+          font-weight: 700;
+      }
+  
+      .product > blockquote > p {
+          font-size: 21px;
+          text-align: left;
+          font-weight: 500;
+      }
+  
+      .product > blockquote > #paragraph-left {
+          font-size: 18px;
+      }
+
+      .newsletter {
+        font-size: 19px;
+        width: 95%;
+        margin: 6px 1px 5px 15px;
+
+    }
+
+    .newsletter input[type="email"]{
+        margin-right: 1em;
+        width: 270px;
+    }
+
+    footer {
+        text-align: center;
+        font-size: 15px;
+    }
+
+
     
 }
 
 
 /* 4k -2560 */
 @media screen and (min-width : 1441px) and (max-width: 2560px){
+    #headerStyle h1 {
+        font-weight: 700;
+        line-height: 80px;
+        font-size: 2em;
+    }
+
+
+    #burger {
+        display: none;
+
+    }
+
+    .navbar-list {
+        margin-top: 50px;
+        font-size: 20px;
+    }
+
+
+    .latest-h1 {
+        margin-top: 30px;
+        text-align: center;
+        font-size: 40px;
+    }
+
+    .product-grid {
+        grid-template-rows: repeat(1, 1fr);
+        align-items: center;
+        padding: 70px;
+        margin-left: 330px;
+    }
+    .product {
+        width: 70%;
+    }
+
+    .product > p >img {
+        width: 40%;
+    }
+
+    .product > h3 {
+        font-size: 35px;
+        text-align: center;
+        font-weight: bold;
+    }
+    .product > blockquote > h4 {
+          font-size: 25px;
+          text-align: left;
+          font-weight: 700;
+    }
+  
+    .product > blockquote > p {
+          font-size: 22px;
+          text-align: left;
+          font-weight: 500;
+      }
+
+    .product > blockquote > #paragraph-left {
+        font-size: 20px;
+    }
+    .newsletter {
+        font-size: 20px;
+        width: 99%;
+        margin: 6px 1px 5px 15px;
+    }
+
+    .newsletter input[type="email"]{
+        margin-right: 1.5em;
+        width: 270px;
+    }
+
+    footer {
+        text-align: center;
+        font-size: 20px;
+    }
+      
+
+
     
 }
