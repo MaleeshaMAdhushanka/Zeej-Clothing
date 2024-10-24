@@ -7,6 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Work Wear Collection - Clothing</title>
     <link rel="stylesheet" href="/css/workWearCollection.css">
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"/>
+
 
 
 
@@ -15,6 +20,8 @@
 <body>
     <header id="headerStyle">
         <h1 >WORK WEAR COLLECTION</h1>
+        <i class="fa fa-bars burger" id="burger" aria-hidden="true"></i>
+
     
 
     <nav>
@@ -36,14 +43,32 @@
     </nav>
 </header>
 
+<div class="menu-panel" id="menu-panel-id"> 
+    <button class="close-btn" id="btn-close">&times;</button>
+
+     <ul>
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="new_arrivals.html">NEW ARRIVALS</a></li>
+        <li><a href="dresses.html">DRESSES</a></li>
+        <li><a href="tops.html">TOPS</a></li>
+        <li><a href="skirts.html">SKIRTS</a></li>
+        <li><a href="shorts.html">SHORTS</a></li>
+        <li><a href="denim.html">DENIM</a></li>
+        <li><a href="work_wear.html">WORK WEAR COLLECTION</a></li>
+        <li><a href="Clothing-media.html">MEDIA CONTENT</a></li>
+
+
+      </ul>
+
+
+   </div>
+
 <main>
 
 
 
     <section>
-        <center>
-            <h2>Professional Attire for the Modern Worker</h2>
-        </center>
+            <h1 class="latest-h1">Professional Attire for the Modern Worker</h1>
     </section>
 
 
@@ -60,15 +85,15 @@
             <blockquote>
                 <h4>Size-</h4>
                 <p>UK12, UK16</p>
-                <p>Color-Off Black</p>
+                <h4>Color-Off Black</h4>
                 </p>
 
                 <p>Wash & Care-Wash dark colors separately</p>
                 <p>Fabric Composition-100% Polyester</p>
                 <p>About the Model-Model Wear - size 08
                     Height-5.10"</p>
-                <p>Fit- True To Size</p>
-                <p style="font-weight: normal;"><span class="color-span">A front pleated straight leg pant</span>is a timeless and flattering style that offers a combination of elegance and comfort. 
+                <h4>Fit- True To Size</h4>
+                <p id="paragraph-left" style="font-weight: normal;"><span class="color-span">A front pleated straight leg pant</span>is a timeless and flattering style that offers a combination of elegance and comfort. 
                     The pleats at the front add depth and texture to the garment, while the straight leg cut provides a balanced and streamlined silhouette. 
                     This style is versatile and can be dressed up or down to suit various occasions.</p>
 
@@ -84,11 +109,11 @@
                 <img src="/images/workwear2.webp" style="object-fit: cover;"
                     alt="workwear product 2">
 
-            <h3><b>HIGH NECK SELEEVELESS TOP</b></h3>
+            <h3>HIGH NECK SELEEVELESS TOP</h3>
             <blockquote>
                 <h4>Size-</h4>
                 <p>UK 6</p>
-                <p>Color- White</p>
+                <h4>Color- White</h4>
             
                 </p>
 
@@ -96,8 +121,8 @@
                 <p>Fabric Composition-100% Polyester</p>
                 <p>About The Model-Model Wear - size 8
                     Height 5.5"</p>
-                <p>Fit - True To Size</p>
-                <p style="font-weight: normal;"><span class="color-span">A high-neck sleeveless top</span> is a versatile and timeless piece
+                <h4>Fit - True To Size</h4>
+                <p id="paragraph-left" style="font-weight: normal;"><span class="color-span">A high-neck sleeveless top</span> is a versatile and timeless piece
                     that can be dressed up or down to suit various occasions. 
                    The high neckline adds a touch of sophistication and elegance, while the sleeveless design offers a cool and comfortable option for warmer weather.<b>
 
@@ -111,34 +136,33 @@
 
         </div>
 
-        <div class="product">
+        <div class="product" id="product-3">
 
             <p>
-
                 <img src="/images/workwear4.webp" style="object-fit: cover;"
                     alt="workwear product 3">
-            <h3><b>BUTTON DOWN V-NECK TOP</b></h3>
+            <h3>BUTTON DOWN V-NECK TOP</h3>
 
             <blockquote>
                 <h4>Size-</h4>
                 <p>UK 6, UK 8, UK10, UK12</p>
-                <p>Color-Blue</p>
+                <h4>Color-Blue</h4>
             
 
-                </p>
+            </p>
 
                 <p>Work & Care- Wash darl colors separately</p>
                 <p>Fabric Composition-100% Viscose</p>
                 <p>About The ModelModel Wear- Size 06
                     Height- 5.5"</p>
-                <p>Fit - True To Size</p>
+                <h4>Fit - True To Size</h4>
 
 
-                <p style="font-size: normal;"><span class="color-span">A button-down v-neck top</span><b>
+                <p id="paragraph-left" style="font-size: normal;"><span class="color-span">A button-down v-neck top</span><b>
                      is a timeless and versatile piece
                      that can be dressed up or down to suit various occasions.
                      The v-neckline adds a touch of sophistication and elegance, while the button-down closure provides a classic and polished look.
-                </b></p>
+                </p>
 
 
             </blockquote>
@@ -165,11 +189,25 @@
 
 </main>
     <footer>
-
-        <center>
             <p>&copy; 2024 ClothingShop.All Rights Reserved</p>
-        </center>
+    
     </footer>
+
+    <script>
+      const burger = document.getElementById('burger');
+       const menuPanel = document.getElementById('menu-panel-id');
+       const closeBtn = document.getElementById("btn-close");
+
+       burger.addEventListener('click', () => {
+           menuPanel.classList.toggle('active');
+       });
+
+       closeBtn.addEventListener("click", () => {
+          menuPanel.classList.toggle("active");
+       });
+
+
+    </script>
 
 
 
