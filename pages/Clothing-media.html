@@ -6,40 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Clothing Media- ClothingShop</title>
      <link rel="stylesheet" href="/css/clothingmedia.css">
+     <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+     integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+     crossorigin="anonymous"
+     referrerpolicy="no-referrer"/>
 
-
-     <style>
-       /* .container{
-      
-        border: 2px solid rgb(177, 43, 20);
-        backdrop-filter: blur(10px);
-       } */
-
-       /* body{
-        cursor: url('/images.png'), auto;
-       } */
-      
-      button{
-        background: #00f7ff;
-        box-shadow: 0 0 15px #00f7ff, 0 0 15px 00f7ff;
-      }
-     
-
-
-
-
-
-     </style>
-
-
-
-
-
-
-
-
-
-    
 </head>
 
 
@@ -49,6 +20,7 @@
     <header id="headerStyle">
     
         <h1>MEDIA CONTENT</h1>
+        <i class="fa fa-bars burger" id="burger" aria-hidden="true"></i>
     
     <nav>
         <ul class="navbar-list">
@@ -61,36 +33,138 @@
                 <li><a href="denim.html">DENIM</a></li>
                 <li><a href="work_wear.html">WORK WEAR COLLECTION</a></li>
                 <li><a href="Clothing-media.html">MEDIA CONTENT</a></li>
-            
-
-
 
         </ul>
     </nav>
 </header>
 
+<div class="menu-panel" id="menu-panel-id"> 
+    <button class="close-btn" id="btn-close">&times;</button>
+
+     <ul>
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="new_arrivals.html">NEW ARRIVALS</a></li>
+        <li><a href="dresses.html">DRESSES</a></li>
+        <li><a href="tops.html">TOPS</a></li>
+        <li><a href="skirts.html">SKIRTS</a></li>
+        <li><a href="shorts.html">SHORTS</a></li>
+        <li><a href="denim.html">DENIM</a></li>
+        <li><a href="work_wear.html">WORK WEAR COLLECTION</a></li>
+        <li><a href="Clothing-media.html">MEDIA CONTENT</a></li>
+
+
+      </ul>
+
+
+   </div>
+
 
 <main>
-   
 
-    <section>
+    <div class="video-background">
+        <video autoplay muted loop >
 
-        <form>
-            <div class="product" id="container">
-                <center>
+            <source src="/assets/9710758-uhd_2160_3840_25fps.mp4" type="video/mp4">
+            
+        </video>
 
-                    <video id="video1" src="/videos/8311915-uhd_2160_4096_25fps.mp4"
-                        style="object-fit: cover;" controls></video>
+     <div class="container">
 
-                </center>
+        <div class="content">
+            <a href="#popup1">
+                <img src="/assets/clo1.webp" alt="clo-pic1">
+            </a>
 
+        </div>
+        <div class="content">
+            <a href="#popup2">
+                <img src="/assets/clo2.webp" alt="clo-pic2">
+            </a>
+
+        </div>
+        <div class="content">
+            <a href="#popup3">
+                <img src="/assets/clo3.webp" style="width: 77%;" alt="clo-pic3">
+            </a>
+
+        </div>
+        <div class="content">
+            <a href="#popup4">
+                <img src="/assets/clo4.webp" style="width: 77%;" alt="clo-pic4">
+            </a>
+
+        </div>
+        <div class="content">
+            <a href="#popup5">
+                <img src="/assets/clo5.webp" style="width: 77%;" alt="clo-pic5">
+            </a>
+
+        </div>
+        <div class="content">
+            <a href="#popup6">
+                <img src="/assets/clo6.webp" alt="clo-pic6">
+            </a>
+
+        </div>
+
+        <!-- Image pop 1 -->
+
+        <div id="popup1" class="overlay">
+            <a href="#" class="close">&times;</a>
+            <div class="popup">
+                <img src="/assets/clo1.webp" alt="Popup Image">
             </div>
+        </div>
+    
+        <!-- Image Popup 2 -->
+        <div id="popup2" class="overlay">
+            <a href="#" class="close">&times;</a>
+            <div class="popup">
+                <img src="/assets/clo2.webp" alt="Popup Image">
+            </div>
+        </div>
 
 
-        </form>
+        <div id="popup3" class="overlay">
+            <a href="#" class="close">&times;</a>
+            <div class="popup">
+                <img src="/assets/clo3.webp" alt="Popup Image">
+            </div>
+        </div>
+    
+        <!-- Image Popup 2 -->
+        <div id="popup4" class="overlay">
+            <a href="#" class="close">&times;</a>
+            <div class="popup">
+                <img src="/assets/clo4.webp" alt="Popup Image">
+            </div>
+        </div>
 
-        </br>
-    </section>
+
+        <div id="popup5" class="overlay">
+            <a href="#" class="close">&times;</a>
+            <div class="popup">
+                <img src="/assets/clo5.webp" alt="Popup Image">
+            </div>
+        </div>
+    
+        <!-- Image Popup 2 -->
+        <div id="popup6" class="overlay">
+            <a href="#" class="close">&times;</a>
+            <div class="popup">
+                <img src="/assets/clo6.webp" alt="Popup Image">
+            </div>
+        </div>
+
+
+    
+
+     </div>
+
+
+
+    </div>
+   
 
     <section>
 
@@ -110,11 +184,27 @@
 
 
     <footer>
-
-        <center>
             <p>&copy; 2024 ColothingShop. All Rights Reserved</p>
-        </center>
     </footer>
+
+    <script>
+
+       const burger = document.getElementById('burger');
+       const menuPanel = document.getElementById('menu-panel-id');
+       const closeBtn = document.getElementById("btn-close");
+
+       burger.addEventListener('click', () => {
+           menuPanel.classList.toggle('active');
+       });
+
+       closeBtn.addEventListener('click', () => {
+          menuPanel.classList.toggle('active');
+       });
+
+
+
+
+    </script>
 
 
 
