@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DENIM - ClothingShop</title>
     <link rel="stylesheet" href="/css/denim.css">
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"/>
 
 
 
@@ -17,6 +21,7 @@
 
     
         <h1>DENIM</h1>
+        <i class="fa fa-bars burger" id="burger" aria-hidden="true"></i>
     
 
     <nav>
@@ -39,12 +44,35 @@
     </nav>
 </header>
 
+
+<div class="menu-panel" id="menu-panel-id"> 
+    <button class="close-btn" id="btn-close">&times;</button>
+
+     <ul>
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="new_arrivals.html">NEW ARRIVALS</a></li>
+        <li><a href="dresses.html">DRESSES</a></li>
+        <li><a href="tops.html">TOPS</a></li>
+        <li><a href="skirts.html">SKIRTS</a></li>
+        <li><a href="shorts.html">SHORTS</a></li>
+        <li><a href="denim.html">DENIM</a></li>
+        <li><a href="work_wear.html">WORK WEAR COLLECTION</a></li>
+        <li><a href="Clothing-media.html">MEDIA CONTENT</a></li>
+
+
+      </ul>
+
+
+   </div>
+
+
+
 <main>
 
     <section>
-        <center>
-            <h2>Classic Denim For Every style</h2>
-        </center>
+       
+            <h1 class="latest-h1">Classic Denim For Every style</h1>
+        
     </section>
 
 
@@ -56,21 +84,21 @@
 
                 <img src="/images/denim1.webp" style=" object-fit: cover;"
                     alt="Product 1 denim">
-            <h3><b>HIGH WAIST STRAIGHT LEG DENIM</b></h3>
+            <h3>HIGH WAIST STRAIGHT LEG DENIM</h3>
 
             </br>
             <blockquote>
                 <h4>Size</h4>
                 <p>UK11, UK12</p>
-                <p><b>Color-Off White</b></p>
+                <h4>Color-Off White</h4>
                 </p>
 
                 <p>Wash & Care</p>
                 <p>Fabric Composition-98% Cotton separatley</p>
                 <p>About The Model -Model Wears- size 6
                     Height- 5.9"</p>
-                <p>Fit- True to size</p>
-                <p style="font-weight: normal;"><span class="color-span">High-waist straight leg denim</span> is a timeless and flattering style that offers a chic and modern look. 
+                <h4>Fit- True to size</h4>
+                <p id="paragraph-left" style="font-weight: normal;"><span class="color-span">High-waist straight leg denim</span> is a timeless and flattering style that offers a chic and modern look. 
                     The high waistline accentuates the natural curves of the body,
                      while the straight leg cut provides a balanced and streamlined silhouette. 
                      This style is versatile and can be dressed up or down to suit various occasions.
@@ -88,7 +116,7 @@
             <p>
                 <img src="/images/denim2.webp" style="object-fit: cover;"
                     alt="Product 2 denim">
-            <h3><b>HIGH WAIST WHITE DENIM STRAIGHT LEG PANT</b></h3>
+            <h3>HIGH WAIST WHITE DENIM STRAIGHT LEG PANT</h3>
             </br>
 
             <blockquote>
@@ -101,9 +129,9 @@
                 <p>Color-Off white</p>
                 <p>Fabric Composition-98% Cotton 2%Spandex</p>
                 <p>About The Model-Model Wears-size 6 Hight-5.8"</p>
-                <p>Fit True to size</p>
+                <h4>Fit True to size</h4>
 
-                <p style="font-weight: normal;"><span class="color-span">A high-waist white denim straight leg pan</span>t  is a classic yet modern piece that adds a touch of brightness and versatility to your wardrobe.
+                <p id="paragraph-left" style="font-weight: normal;"><span class="color-span">A high-waist white denim straight leg pan</span>t  is a classic yet modern piece that adds a touch of brightness and versatility to your wardrobe.
                      The high waistline accentuates the natural curves of the body, while the straight leg cut provides a balanced and streamlined silhouette. 
                     The crisp white color is both fresh and timeless, making it a versatile piece that can be dressed up or down. </p>
 
@@ -119,7 +147,7 @@
             <p>
                 <img src="/images/denim3.webp" style="object-fit: cover;"
                     alt="Product 3 denim">
-            <h3><b>Front SLIT DENIM MAXI SKIRT</b></h3>
+            <h3>Front SLIT DENIM MAXI SKIRT</h3>
             </br>
             <blockquote>
                 <h4>Size -</h4>
@@ -133,8 +161,8 @@
                 <p>Fabric Composition-100% Cotton</p>
                 <p>About the Mode -Model Wears- size 06
                     Height- 5.3"</p>
-                <p>Fit- True To Size</p>
-                <p style="font-weight: normal;"><span class="color-span">A front slit denim maxi skirt</span>
+                <h4>Fit- True To Size</h4>
+                <p id="paragraph-left" style="font-weight: normal;"><span class="color-span">A front slit denim maxi skirt</span>
 
 
                      is a versatile and on-trend piece that offers a combination of comfort, style,
@@ -164,17 +192,33 @@
             </form>
         </div>
     </section>
-</main>
+ </main>
 
     <footer>
-        <center>
+        
             <p>&copy; 20224 ColothingShop.All Right Reserved</p>
-        </center>
+
     </footer>
 
 
+    <script>
 
 
+      const burger = document.getElementById('burger');
+       const menuPanel = document.getElementById('menu-panel-id');
+       const closeBtn = document.getElementById("btn-close");
+
+       burger.addEventListener('click', () => {
+           menuPanel.classList.toggle('active');
+       });
+
+       closeBtn.addEventListener("click", () => {
+          menuPanel.classList.toggle("active");
+       });
+
+    </script>
+
+</body>
 
 
 </html>
